@@ -1,0 +1,165 @@
+body {
+  /*padding-top: 50px;*/
+  color: #a7a3a3;
+  font-family: 'News Cycle', sans-serif;
+  letter-spacing: 0.07em;
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  transition: ease 0.5s;
+}
+
+a.a-text {
+  color: #EAE4E4;
+}
+
+a.a-text:hover {
+  color: #a7a3a3;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+
+/*MENU*/
+
+.nav.navbar-nav {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  padding-top: 10px;
+}
+
+.navbar-brand>img {
+  width: 120px;
+}
+
+.affix .navbar-brand>img {
+  width: 70px;
+}
+
+.affix-top .navbar-inverse {
+  background-color: transparent;
+  border: none;
+}
+
+.affix .navbar-inverse {
+  background-color: white;
+  border: none;
+  color: black;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.affix .navbar-inverse .navbar-nav>li>a {
+  color: black;
+  padding-top: 45px;
+  margin-bottom: 45px;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background: none;
+  border-bottom: 2px solid white;
+}
+
+.affix .navbar-inverse .navbar-nav>.active>a, .affix .navbar-inverse .navbar-nav>.active>a:focus, .affix .navbar-inverse .navbar-nav>.active>a:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.affix-top .navbar-inverse .navbar-nav>li>a:hover {
+  color: #EAE4E4;
+}
+
+.affix .navbar-inverse .navbar-nav>li>a:hover {
+  color: #06142D;
+}
+
+
+/*FOOTER*/
+
+footer {
+  background-color: #06142d;
+  padding: 30px 15px;
+  color: #EAE4E4;
+}
+
+footer h4 {
+  color: #66cee4;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+footer .footer-logo {
+  float: left;
+  width: 80px;
+  margin-right: 10px;
+}
+
+footer .footer-menu li {
+  margin-bottom: 10px;
+}
+
+
+/*HOMEPAGE*/
+
+header {
+  position: fixed;
+  left: 0;
+  transition: background .3s ease, height .4s ease;
+  width: 100%;
+  z-index: 29;
+  -webkit-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+
+.header-wrapper {
+  position: relative;
+  width: 100%;
+  transition: height .3s ease 0s, background .3s ease 0s;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 29;
+}
+
+/*SLIDER*/
+
+.bx-wrapper {
+  border: none;
+  margin-bottom: 0;
+}
+
+.bx-pager.bx-default-pager {
+  display: none;
+}
+
+
+/*GENERAL*/
+
+.main {
+  padding-top: 130px;
+  background-color: #1A1C1D;
+}
+
+.home-main {
+  padding-top: 0;
+  color: #1A1C1D;
+  background-color: white;
+}

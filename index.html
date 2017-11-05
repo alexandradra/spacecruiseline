@@ -10,13 +10,14 @@
   <link rel="icon" href="../../favicon.ico">
 
   <title>Space Cruise Line | Accueil</title>
-  <link href="https://fonts.googleapis.com/css?family=News+Cycle:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=News+Cycle:400,700|Lato:300,400,700|Raleway:300,400,500,600,700" rel="stylesheet">
   <!-- ICON FONTS -->
   <script src="https://use.fontawesome.com/395a9cea35.js"></script>
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/animate.css">
   <!-- Feuille de style principale -->
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -34,7 +35,8 @@
                 <span class="icon-bar"></span>
               </button>
             <a class="navbar-brand" href="index.html">
-              <img src="images/logo-300x400.png" class="img-responsive" alt="">
+              <img src="images/logo-300x400.png" class="img-responsive affix-top-logo" alt="">
+              <img src="images/logo-inline300x68.png" class="img-responsive affix-logo" alt="">
             </a>
           </div>
           <div id="navbar" class="collapse navbar-collapse">
@@ -50,14 +52,64 @@
       </nav>
     </div>
   </header>
-  <div class="slider">
-    <div>
-      <img src="images/slider-1.jpg" alt="Stars during Night Time">
+  <section class="banner-slider">
+    <div class="onslides fixed">
+      <section class="booking-form-ctn">
+        <div class="form-title">
+          <h1>Réservez une croisière unique à travers le système solaire</h1>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Example block-level help text here.</p>
+          </div>
+          <div class="checkbox">
+            <label>
+      <input type="checkbox"> Check me out
+    </label>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </section>
     </div>
-    <div>
-      <img src="images/slider-2.jpg" alt="Stars during Night Time">
+    <div class="slider">
+      <div class="slide">
+        <img src="images/slider/slider-1.jpg" alt="Décollage de fusée">
+        <div class="onslides changing">
+          <div class="titles text-center wow slideInRight" data-wow-duration="1s" data-wow-delay="0s">
+            <h2><i class="fa fa-grav" aria-hidden="true"></i> Découvrez notre offre Famille</h2>
+            <h3>Jusqu'à -30% sur votre croisière ! <br>
+            Et une surprise pour vous petit·e·s astronautes !</h3>
+            <p><a href="reservation.html"><i class="fa fa-chevron-right" aria-hidden="true"></i> Réserver mon week-end</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="images/slider/slider-2.jpg" alt="Satellite survollant la Terre">
+        <div class="onslides changing">
+          <div class="titles text-center wow slideInRight" data-wow-duration="1s" data-wow-delay="0s">
+            <h2><i class="fa fa-grav" aria-hidden="true"></i> Découvrez notre offre Famille</h2>
+            <h3>Jusqu'à -30% sur votre croisière ! <br>
+            Et une surprise pour vous petit·e·s astronautes !</h3>
+            <p><a href="reservation.html"><i class="fa fa-chevron-right" aria-hidden="true"></i> Réserver mon week-end</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="images/slider/slider-3.jpg" alt="Nébuleuse">
+      </div>
     </div>
-  </div>
+  </section>
+
 
   <section class="main home-main">
     <div class="container">
@@ -126,6 +178,10 @@
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <script src="js/main.js" charset="utf-8"></script>
 </body>
 

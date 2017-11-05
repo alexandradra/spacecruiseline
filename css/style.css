@@ -4,10 +4,13 @@ body {
   font-family: 'News Cycle', sans-serif;
   letter-spacing: 0.07em;
 }
-
+a {
+  color: #310e56;
+}
 a:hover, a:active, a:focus {
   text-decoration: none;
   transition: ease 0.5s;
+  color: 	#922e79;
 }
 
 a.a-text {
@@ -22,7 +25,6 @@ a.a-text:hover {
   padding: 40px 15px;
   text-align: center;
 }
-
 
 /*MENU*/
 
@@ -39,8 +41,26 @@ a.a-text:hover {
   width: 120px;
 }
 
+.affix-top .navbar-brand .affix-logo {
+  display: none;
+}
+
+.affix-top .navbar-brand .affix-top-logo {
+  display: block;
+}
+
+.affix .navbar-brand .affix-top-logo {
+  display: none;
+}
+
+.affix .navbar-brand .affix-logo {
+  display: block;
+}
+
 .affix .navbar-brand>img {
-  width: 70px;
+  padding-top: 5px;
+  width: 250px;
+  transition: all .4s ease 0s;
 }
 
 .affix-top .navbar-inverse {
@@ -52,14 +72,13 @@ a.a-text:hover {
   background-color: white;
   border: none;
   color: black;
+  transform: translateZ(0);
+  transition: height .3s ease 0s, background .3s ease 0s;
 }
 
 .navbar-inverse .navbar-nav>li>a {
   color: white;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 80px;
+  padding: 40px 5px 5px 5px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 15px;
@@ -67,8 +86,8 @@ a.a-text:hover {
 
 .affix .navbar-inverse .navbar-nav>li>a {
   color: black;
-  padding-top: 45px;
-  margin-bottom: 45px;
+  padding-top: 30px;
+  margin-bottom: 25px;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
@@ -88,7 +107,6 @@ a.a-text:hover {
 .affix .navbar-inverse .navbar-nav>li>a:hover {
   color: #06142D;
 }
-
 
 /*FOOTER*/
 
@@ -114,7 +132,6 @@ footer .footer-menu li {
   margin-bottom: 10px;
 }
 
-
 /*HOMEPAGE*/
 
 header {
@@ -136,7 +153,7 @@ header {
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0);
-  z-index: 29;
+  z-index: 3;
 }
 
 /*SLIDER*/
@@ -150,7 +167,71 @@ header {
   display: none;
 }
 
+.banner-slider {
+  position: relative;
+}
 
+.banner-slider .onslides {
+  position: absolute;
+  z-index: 20;
+}
+.banner-slider .onslides.fixed {
+  left: 50px;
+  top: 195px;
+}
+.banner-slider .onslides.changing {
+  right: 100px;
+  top: 195px;
+  width: 500px;
+}
+
+.banner-slider .onslides .titles {
+  background-color: rgba(255, 255, 255, 0.46);
+  padding: 15px 20px;
+  color: black;
+}
+
+.banner-slider .onslides .titles h2, .banner-slider .onslides .titles h3 {
+  margin: 0;
+  color: #310e56;
+  line-height: 35px;
+}
+
+.banner-slider .onslides .titles h2 {
+  font-size: 23px;
+  text-transform: uppercase;
+}
+.banner-slider .onslides .titles h3 {
+  font-size: 19px;
+  font-family: 'Lato';
+  letter-spacing: 0px;
+  font-weight: 300;
+}
+.banner-slider .onslides .titles p {
+  margin-top: 10px;
+}
+.banner-slider .onslides .titles a {
+  font-size: 17px;
+}
+.banner-slider .booking-form-ctn {
+  background-color: white;
+  width: 440px;
+}
+.banner-slider .booking-form-ctn .form-title {
+  margin: 0;
+  background-color: #310e56;
+}
+.banner-slider .booking-form-ctn h1 {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px 10px 25px;
+  color: white;
+  text-transform: uppercase;
+}
+.banner-slider .booking-form-ctn form {
+  padding: 15px 25px 25px;
+}
 /*GENERAL*/
 
 .main {

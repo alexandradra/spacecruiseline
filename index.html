@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link href="css/datepicker.min.css" rel="stylesheet">
   <!-- Feuille de style principale -->
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -53,31 +54,35 @@
     </div>
   </header>
   <section class="banner-slider">
-    <div class="onslides fixed">
+    <div class="onslides fixed wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
       <section class="booking-form-ctn">
         <div class="form-title">
-          <h1>Réservez une croisière unique à travers le système solaire</h1>
+          <h1>Prêt·e·s pour l'aventure ?</h1>
         </div>
         <form>
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            <label for="dateDepart">Date de départ</label>
+            <input data-toggle="datepicker" class="form-control" id="dateDepart" placeholder="jj/mm/aaaa">
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <label for="dateRetour">Date de retour <i>La durée moyenne de nos croisière est de 10 jours</i></label>
+            <input data-toggle="datepicker" class="form-control" id="dateRetour" placeholder="jj/mm/aaaa">
           </div>
           <div class="form-group">
-            <label for="exampleInputFile">File input</label>
-            <input type="file" id="exampleInputFile">
-            <p class="help-block">Example block-level help text here.</p>
+            <label for="nbAdultes">Nombre d'adultes</label>
+            <div class="input-group">
+              <div class="input-group-addon"><i class="fa fa-male" aria-hidden="true"></i></div>
+              <input type="number" class="form-control" id="nbAdultes" max="10" placeholder="1">
+            </div>
           </div>
-          <div class="checkbox">
-            <label>
-      <input type="checkbox"> Check me out
-    </label>
+          <div class="form-group">
+            <label for="nbEnfants">Nombre d'enfants</label>
+            <div class="input-group">
+              <div class="input-group-addon"><i class="fa fa-child" aria-hidden="true"></i></div>
+              <input type="number" class="form-control" max="10" id="nbEnfants" placeholder="1">
+            </div>
           </div>
-          <button type="submit" class="btn btn-default">Submit</button>
+          <a href="reservation.html" class="footer-btn galaxy-btn btn btn-default">Réservez maintenant !</a>
         </form>
       </section>
     </div>
@@ -86,15 +91,26 @@
         <img src="images/slider/slider-1.jpg" alt="Décollage de fusée">
         <div class="onslides changing">
           <div class="titles text-center wow slideInRight" data-wow-duration="1s" data-wow-delay="0s">
-            <h2><i class="fa fa-grav" aria-hidden="true"></i> Découvrez notre offre Famille</h2>
-            <h3>Jusqu'à -30% sur votre croisière ! <br>
-            Et une surprise pour vous petit·e·s astronautes !</h3>
-            <p><a href="reservation.html"><i class="fa fa-chevron-right" aria-hidden="true"></i> Réserver mon week-end</a></p>
+            <h2><i class="fa fa-diamond" aria-hidden="true"></i> Service Prestige</h2>
+            <h3>Capsule extérieure, combinaison extra-légère, Premium SpaceFood™, et bien plus encore <br>
+            Nous vous proposons l'inoubliable...</h3>
+            <p><a href="reservation.html"><i class="fa fa-chevron-right" aria-hidden="true"></i> Découvrir nos prestations</a></p>
           </div>
         </div>
       </div>
       <div class="slide">
         <img src="images/slider/slider-2.jpg" alt="Satellite survollant la Terre">
+        <div class="onslides changing">
+          <div class="titles text-center wow slideInRight" data-wow-duration="1s" data-wow-delay="0s">
+            <h2><i class="fa fa-grav" aria-hidden="true"></i> Explorez le système solaire</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit <br>
+            Sed do eiusmod tempor incididunt </h3>
+            <p><a href="reservation.html"><i class="fa fa-chevron-right" aria-hidden="true"></i> Réserver mon week-end</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="images/slider/slider-3.jpg" alt="Nébuleuse">
         <div class="onslides changing">
           <div class="titles text-center wow slideInRight" data-wow-duration="1s" data-wow-delay="0s">
             <h2><i class="fa fa-grav" aria-hidden="true"></i> Découvrez notre offre Famille</h2>
@@ -103,9 +119,6 @@
             <p><a href="reservation.html"><i class="fa fa-chevron-right" aria-hidden="true"></i> Réserver mon week-end</a></p>
           </div>
         </div>
-      </div>
-      <div class="slide">
-        <img src="images/slider/slider-3.jpg" alt="Nébuleuse">
       </div>
     </div>
   </section>
@@ -177,6 +190,7 @@
     window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/datepicker.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script>

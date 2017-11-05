@@ -5,12 +5,13 @@ body {
   letter-spacing: 0.07em;
 }
 a {
-  color: #310e56;
+  color: #06142d;
+
 }
 a:hover, a:active, a:focus {
   text-decoration: none;
   transition: ease 0.5s;
-  color: 	#922e79;
+  color: #310e56;
 }
 
 a.a-text {
@@ -181,12 +182,13 @@ header {
 }
 .banner-slider .onslides.changing {
   right: 100px;
-  top: 195px;
   width: 500px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .banner-slider .onslides .titles {
-  background-color: rgba(255, 255, 255, 0.46);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 15px 20px;
   color: black;
 }
@@ -206,6 +208,7 @@ header {
   font-family: 'Lato';
   letter-spacing: 0px;
   font-weight: 300;
+  color: #06142d;
 }
 .banner-slider .onslides .titles p {
   margin-top: 10px;
@@ -214,24 +217,38 @@ header {
   font-size: 17px;
 }
 .banner-slider .booking-form-ctn {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   width: 440px;
 }
 .banner-slider .booking-form-ctn .form-title {
   margin: 0;
-  background-color: #310e56;
+  /*background-color: #310e56;*/
+  background-image: url('../images/ep_naturalblack.png');
 }
 .banner-slider .booking-form-ctn h1 {
   margin: 0;
   font-size: 18px;
   text-align: center;
-  padding: 20px 10px 25px;
+  padding: 15px 10px 15px;
   color: white;
   text-transform: uppercase;
 }
 .banner-slider .booking-form-ctn form {
   padding: 15px 25px 25px;
 }
+.banner-slider .booking-form-ctn form label {
+  font-family: 'Lato';
+  font-weight: 300;
+  color: 	#06142d;
+  letter-spacing: 0;
+}
+.banner-slider .booking-form-ctn form label i {
+  font-size: 11px;
+}
+.banner-slider .booking-form-ctn .form-group {
+  margin-bottom: 5px;
+}
+
 /*GENERAL*/
 
 .main {
@@ -243,4 +260,32 @@ header {
   padding-top: 0;
   color: #1A1C1D;
   background-color: white;
+}
+.btn {
+  margin-top: 20px;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+.purple-btn {
+  background-color: 	#310e56;
+  border-color: 	#310e56;
+  color: white;
+}
+.purple-btn:hover {
+  transition: ease 0.7s;
+  background-color: 	#922e79;
+  border-color: 	#922e79;
+  color: white;
+}
+.footer-btn {
+  width: 100%;
+  font-size: 16px;
+}
+.galaxy-btn {
+  background-image: url('../images/ep_naturalblack.png');
+  color: white;
+  border: none;
+}
+.galaxy-btn:hover {
+  color: #eae4e4;
 }

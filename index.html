@@ -65,21 +65,21 @@
             <input data-toggle="datepicker" class="form-control" id="dateDepart" placeholder="jj/mm/aaaa">
           </div>
           <div class="form-group">
-            <label for="dateRetour">Date de retour <i>La durée moyenne de nos croisière est de 10 jours</i></label>
+            <label for="dateRetour">Date de retour <i>La durée moyenne de nos croisières est de 10 jours</i></label>
             <input data-toggle="datepicker" class="form-control" id="dateRetour" placeholder="jj/mm/aaaa">
           </div>
           <div class="form-group">
             <label for="nbAdultes">Nombre d'adultes</label>
             <div class="input-group">
               <div class="input-group-addon"><i class="fa fa-male" aria-hidden="true"></i></div>
-              <input type="number" class="form-control" id="nbAdultes" max="10" placeholder="1">
+              <input type="number" class="form-control" id="nbAdultes" min="1" max="10" value="1">
             </div>
           </div>
           <div class="form-group">
             <label for="nbEnfants">Nombre d'enfants</label>
             <div class="input-group">
               <div class="input-group-addon"><i class="fa fa-child" aria-hidden="true"></i></div>
-              <input type="number" class="form-control" max="10" id="nbEnfants" placeholder="1">
+              <input type="number" class="form-control" min="0" max="10" id="nbEnfants" placeholder="0">
             </div>
           </div>
           <a href="reservation.html" class="footer-btn galaxy-btn btn btn-default">Réservez maintenant !</a>
@@ -92,8 +92,7 @@
         <div class="onslides changing">
           <div class="titles text-center wow slideInRight" data-wow-duration="1s" data-wow-delay="0s">
             <h2><i class="fa fa-diamond" aria-hidden="true"></i> Service Prestige</h2>
-            <h3>Capsule extérieure, combinaison extra-légère, Premium SpaceFood™, et bien plus encore <br>
-            Nous vous proposons l'inoubliable...</h3>
+            <h3>Capsule extérieure, combinaison extra-légère, Premium SpaceFood™, et bien plus encore</h3>
             <p><a href="reservation.html"><i class="fa fa-chevron-right" aria-hidden="true"></i> Découvrir nos prestations</a></p>
           </div>
         </div>
@@ -122,16 +121,22 @@
       </div>
     </div>
   </section>
-
-
-  <section class="main home-main">
-    <div class="container">
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+  <main class="main home-main">
+    <section>
+      <div class="container">
+        <h1 class="text-center">Space Cruise Line</h1>
+        <hr class="small-hr">
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="row">
+          <article class="col-md-4 col-sm-4 col-xs-12">
+            <figure>
+              
+            </figure>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
   <!-- /.container -->
   <footer>
     <div class="row">

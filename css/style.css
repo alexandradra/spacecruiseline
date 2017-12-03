@@ -478,3 +478,73 @@ h3.timer {
   margin-top: 25px;
   margin-bottom: 15px;
 }
+
+
+/* Amandine */
+/* Formulaire */
+
+
+.reservation-form {
+  resize: vertical;
+  overflow: auto;
+  min-width: 50px; /*suggest a min-width & min-height*/
+  min-height: 50px;
+ }
+
+ .reservation-form fieldset {
+ padding:0 20px 20px 20px;
+ margin-bottom:10px;
+ border:2px solid #730E89;
+ }
+.reservation-form legend {
+ color:#730E89;
+ font-weight:bold
+ }
+
+.reservation-form label {
+ margin-top:10px;
+ display:block;
+ }
+.reservation-form label.inline {
+ display:inline;
+ margin-right:50px;
+ }
+.reservation-form input, textarea, select, option {
+ background-color:#FFF3F3;
+ }
+.reservation-form input, textarea, select {
+ padding:7px;
+ border:1px solid #F5C5C5;
+ border-radius:5px;
+ width:200px;
+ box-shadow:1px 1px 2px #C0C0C0 inset;
+ }
+.reservation-form select {
+ margin-top:10px;
+ }
+.reservation-form input[type=radio] {
+ background-color:transparent;
+ border:none;
+ width:10px;
+ }
+.reservation-form input[type=submit], input[type=reset] {
+ width:100px;
+ margin-left:5px;
+ box-shadow:1px 1px 1px #D83F3D;
+ cursor:pointer;
+ }
+
+/* Image */
+img {
+	width: 100px;
+	height: 100px;
+}
+
+/* Bouton formulaire */
+input[type=submit]:hover, input[type=reset]:hover {
+ background-color:#FCDEDE;
+ }
+input[type=submit]:active, input[type=reset]:active {
+ background-color:#FCDEDE;
+ box-shadow:1px 1px 1px #D83F3D inset;
+}

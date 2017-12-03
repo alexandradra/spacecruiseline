@@ -33,15 +33,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html">
-                <img src="images/logo-300x400.png" class="img-responsive affix-top-logo" alt="">
-                <img src="images/logo-inline300x68.png" class="img-responsive affix-logo" alt="">
-              </a>
+            <a class="navbar-brand" href="index.html">
+              <!-- <img src="images/logo-300x400.png" class="img-responsive affix-top-logo" alt=""> -->
+              <img src="images/logo-inline300x68.png" class="img-responsive affix-logo" alt="">
+            </a>
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav pull-right">
-              <li class=""><a href="index.html">Accueil</a></li>
-              <li class="active"><a href="reservation.html">Réservation</a></li>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="reservation.html">Réservation</a></li>
               <li><a href="informations.html">Informations</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a href="mon-compte.html"><span class="lnr lnr-user"></span></a></li>
@@ -51,17 +51,148 @@
       </nav>
     </div>
   </header>
-  <section class="main">
-    <div class="container">
+  <main class="main">
+    <section>
+      <div class="container">
+        <!-- AMANDINE-->
+        <h3 align="center">
+          Vous vous apprêtez à vivre une aventure unique, dans la peau d'un astronaute. Préparons ensemble votre voyage idéal !
+        </h3>
+        <!-- Formulaire reservation-->
+        <form class="reservation-form">
+          <fieldset>
+            <legend> Dormir à la belle étoile </legend>
+            <center>
+              <label for="utilise"> Choisissez votre cabine: </label>
+              <select name="utilise" id="utilise">
+               <option value="Simple"> Simple Cabine (1 pers.) </option>
+               <option value="Couple"> Couple Cabine (2 pers.)</option>
+               <option value="Large"> Small Family Cabine (3 pers.)</option>
+               <option value="jamais"> Family Cabine (4 pers.)</option>
+               <option value="jamais"> Large Family Cabine (5/6 pers.)</option>
+              </select>
+            </center>
+          </fieldset>
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+          <fieldset>
+            <legend class="legend"> Dans l'assiette d'un astronaute </legend>
+            <center>
+              <label for="utilise"> Vous apprecierez chaque jour des plats variés servis en apesanteur. <br/> Dites-nous en plus sur votre régime alimentaire:  </label>
+              <input type="radio" name="CSS" value="végétarien" id="végétarien" checked="checked" />
+              <label for="végétarien" class="inline">végétarien</label>
 
+              <input type="radio" name="CSS" value="végétalien" id="végétalien" />
+              <label for="végétalien" class="inline">végétalien</label>
+
+              <input type="radio" name="CSS" value="vegan" id="vegan" />
+              <label for="vegan" class="inline">vegan</label>
+
+              <label for="utilise"> Avez-vous des allergies? </label>
+              <input type="radio" name="CSS" value="oui" id="oui" checked="checked" />
+              <label for="oui" class="inline">oui</label>
+
+              <input type="radio" name="CSS" value="non" id="non" />
+              <label for="non" class="inline">non</label>
+
+              <label for="allergies">Si oui, lesquelles ? </label>
+              <textarea name="allergies" id="allergies" cols="20" rows="4"></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend class="legend"> EXPEDITION </legend>
+            <center>
+              <label for="utilise"> Découverte ou immersion ?  </label>
+              <input type="image" src="images/4planetes.jpg ">
+              <input type="image" src="images/8planetes.jpg ">
+
+          </fieldset>
+
+          <!--validation et paiement-->
+          <form class="reservation-form">
+            <fieldset>
+              <legend>Votre identité</legend>
+              <center>
+
+                <li>
+                  <label for=nom>Nom</label>
+                  <input id=nom name=nom type=text placeholder="Prénom et nom" required autofocus>
+                </li>
+                <li>
+                  <label for=email>Email</label>
+                  <input id=email name=email type=email placeholder="exemple@domaine.com" required>
+                </li>
+                <li>
+                  <label for=telephone>Téléphone</label>
+                  <input id=telephone name=telephone type=tel placeholder="par ex&nbsp;: +3375500000000" required>
+                </li>
+
+            </fieldset>
+
+            <fieldset>
+              <legend class="legend">Adresse de livraison des billets</legend>
+              <center>
+
+                <li>
+                  <label for=adresse>Adresse</label>
+                  <textarea id=adresse name=adresse rows=5 required></textarea>
+                </li>
+                <li>
+                  <label for=codepostal>Code postal</label>
+                  <input id=codepostal name=codepostal type=text required>
+                </li>
+                <li>
+                  <label for=pays>Pays</label>
+                  <input id=pays name=pays type=text required>
+                </li>
+
+              </center>
+            </fieldset>
+
+            <fieldset>
+              <legend class="legend">Paiement</legend>
+              <ol>
+                <li>
+                  <fieldset>
+                    <legend class="legend">Type de carte bancaire</legend>
+                    <ul>
+                      <input id=visa name=type_de_carte type=radio>
+                      <label for=visa>VISA</label>
+
+                      <input id=mastercard name=type_de_carte type=radio>
+                      <label for=mastercard>Mastercard</label>
+                    </ul>
+                  </fieldset>
+                </li>
+
+                <center>
+
+                  <label for=numero_de_carte>N° de carte</label>
+                  <input id=numero_de_carte name=numero_de_carte type=number required>
+
+
+                  <label for=securite>Code sécurité</label>
+                  <input id=securite name=securite type=number required>
+
+                  <label for=nom_porteur>Nom du porteur</label>
+                  <input id=nom_porteur name=nom_porteur type=text placeholder="Nom figurant sur la carte" required>
+
+
+            </fieldset>
+            </center>
+
+            <fieldset>
+              <center>
+                <a type=submit class="purple-btn btn">J'achète !</a>
+              </center>
+            </fieldset>
+          </form>
+
+          <!-- FIN AMANDINE-->
       </div>
+    </section>
+  </main>
 
-    </div>
-  </section>
+
 
   <!-- /.container -->
   <footer>
@@ -69,7 +200,8 @@
       <div class="col-md-3 col-sm-3 col-xs-6">
         <section class="footer-content">
           <h4>À propos de nous</h4>
-          <p class="text-justify"><img src="images/logo-300x400.png" alt="Logo Space Cruise Line" class="footer-logo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="text-justify"><img src="images/logo-300x400.png" alt="Logo Space Cruise Line" class="footer-logo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </section>
       </div>
       <div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-6">

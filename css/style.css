@@ -35,7 +35,11 @@ a.a-text:hover {
   border-width: 3px;
   border-color: #310e56;
 }
-
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 /*MENU*/
 
 .nav.navbar-nav {
@@ -109,6 +113,8 @@ a.a-text:hover {
 
 .affix .navbar-inverse .navbar-nav>li>a:hover {
   color: #06142D;
+  border-bottom: 2px solid #06142D;
+  transition: 0.2s ease;
 }
 
 /*FOOTER*/
@@ -134,7 +140,9 @@ footer .footer-logo {
 footer .footer-menu li {
   margin-bottom: 10px;
 }
-
+.bx-wrapper .bx-controls-direction a {
+  z-index: 10;
+}
 /*HOMEPAGE*/
 
 header {
@@ -255,13 +263,13 @@ header {
 
 .main {
   padding-top: 130px;
-  background-color: #1A1C1D;
+  color: #1A1C1D;
+  background-color: white;
 }
 
 .home-main {
   padding-top: 0;
-  color: #1A1C1D;
-  background-color: white;
+  overflow: hidden;
 }
 .btn {
   margin-top: 20px;
@@ -278,6 +286,17 @@ header {
   background-color: 	#922e79;
   border-color: 	#922e79;
   color: white;
+}
+.purple-blue-btn {
+  background-color:	#922e79;
+  border-color:	#922e79;
+  color: white;
+}
+.purple-blue-btn:hover {
+  transition: ease 0.7s;
+  background-color: #66cee4;
+  border-color: #66cee4;
+  color: 	#06142d;
 }
 
 .footer-btn {
@@ -296,8 +315,66 @@ header {
 /*HOMEPAGE*/
 .home-main section {
   padding-top: 40px;
-  padding-bottom: 50px;
+  /*padding-bottom: 50px;*/
 }
 .home-main section h1 {
 
+}
+.home-main .icons-row {
+  margin-top: 30px;
+}
+.home-main .icons-row img {
+  display: block;
+  margin: 0 auto 20px;
+  width: 100px;
+}
+.home-main .icons-row figcaption {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
+.home-main .planets-travel-ctn {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: url('../images/ep_naturalblack.png');
+  background-attachment: fixed;
+}
+.home-main .planets-travel-ctn .row {
+  /*margin-bottom: 50px;*/
+}
+.home-main .planets-travel-ctn h2 {
+  color: #eae4e4
+}
+.home-main .planets-travel-ctn hr {
+  border-color: #66cee4;
+  margin-bottom: 80px;
+}
+.home-main .planets-travel-ctn .planet-img img {
+  width: 150px;
+  margin: 0 auto;
+  display: flex; /* contexte sur le parent */
+  flex-direction: column; /* direction d'affichage verticale */
+  justify-content: center;
+}
+.home-main .planets-travel-ctn .planet-desc h1, .home-main .planets-travel-ctn .planet-desc p {
+  color: #eae4e4;
+}
+.home-main .planets-travel-ctn .planet-desc h1 {
+  font-size: 26px;
+  letter-spacing: 1em;
+}
+.home-main .planets-travel-ctn .planet-img {
+  height: 200px;
+}
+.home-main .planets-travel-ctn .planet-img .col-md-6:first-child{
+  border-right: 1px dashed #a7a3a3;
+  height: 200px;
+}
+.home-main .planets-travel-ctn .planet-desc p span {
+  color: 	#66cee4;
+}
+.planets-travel-ctn .btn {
+  font-size: 16px;
+  padding: 10px 30px;
+  line-height: normal;
 }

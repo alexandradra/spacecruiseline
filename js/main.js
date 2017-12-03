@@ -1,11 +1,11 @@
 $(document).ready(function() {
   $('.slider').bxSlider({
-    adaptiveHeight:true,
-    speed:1500,
-    pause:5000,
-    pager:false,
+    adaptiveHeight: true,
+    speed: 1500,
+    pause: 5000,
+    pager: false,
     auto: true,
-    mode:'fade',
+    mode: 'fade',
     controls: true,
   });
   $('[data-toggle="datepicker"]').datepicker({
@@ -13,6 +13,13 @@ $(document).ready(function() {
     autoPick: true,
     format: 'dd/mm/yyyy',
     language: 'fr-FR',
-    weekStart:1,
+    weekStart: 1,
   });
+  // $('.parallax-layer').parallax({
+  //   mouseport: jQuery('#parallax')
+  // },
+  // {
+  //   xorigin: 'left',
+  //   yparallax: '0px'
+  // });
 });

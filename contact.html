@@ -10,6 +10,7 @@
   <link rel="icon" href="../../favicon.ico">
 
   <title>Space Cruise Line | Contact</title>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
   <link href="https://fonts.googleapis.com/css?family=News+Cycle:400,700" rel="stylesheet">
   <!-- ICON FONTS -->
   <script src="https://use.fontawesome.com/395a9cea35.js"></script>
@@ -34,9 +35,9 @@
                 <span class="icon-bar"></span>
               </button>
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo-300x400.png" class="img-responsive affix-top-logo" alt="">
-                <img src="images/logo-inline300x68.png" class="img-responsive affix-logo" alt="">
-              </a>
+              <!-- <img src="images/logo-300x400.png" class="img-responsive affix-top-logo" alt=""> -->
+              <img src="images/logo-inline300x68.png" class="img-responsive affix-logo" alt="">
+            </a>
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav pull-right">
@@ -51,18 +52,151 @@
       </nav>
     </div>
   </header>
-  <section class="main">
+
+
+
+  <section class="main contact-us-ctn">
     <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form class="" action="contact.html" method="post">
+            <fieldset>
+              <legend>
+                <h2><i class="fa fa-pencil-square-o" aria-hidden="true"></i> ÉCRIVEZ-NOUS</h2></legend>
+              <p>
+                <label for="civilité">Civilité* :</label>
+                <select name="civilité" id="civilité">
+                <option value="Madame">Madame</option>
+                <option value="Monsieur">Monsieur</option>
+              </select>
+              </p>
+              <p>
+                <div>
+                  <label for="nom">Nom* :</label>
+                  <input type="text" id="nom" />
+                </div>
+              </p>
+              <p>
+                <div>
+                  <label for="courriel">Prénom* :</label>
+                  <input type="email" id="courriel" />
+                </div>
+              </p>
+              <p>
+                <div>
+                  <label for="courriel">Société :</label>
+                  <input type="email" id="courriel" />
+                </div>
+              </p>
+              <p>
+                <div class="form-inline">
+                  <div class="form-group has-success has-feedback">
+                    <label class="control-label" for="inputGroupSuccess1">É-mail* :</label>
+                    <div class="input-group">
+                      <span class="input-group-addon">@</span>
+                      <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+                    </div>
+                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                    <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+                  </div>
+                </div>
+              </p>
+              <p>
+                <div>
+                  <label for="courriel">Téléphone* :</label>
+                  <input type="email" id="courriel" />
+                </div>
+              </p>
+              <p>
+                <div>
+                  <label for="courriel">Adresse* :</label>
+                  <input type="email" id="courriel" />
+                </div>
+              </p>
+              <p>
+                <div>
+                  <label for="courriel">Code postal* :</label>
+                  <input type="email" id="courriel" />
+                </div>
+              </p>
+              <p>
+                <div>
+                  <label for="courriel">Ville* :</label>
+                  <input type="email" id="courriel" />
+                </div>
+              </p>
+              <p>
+                <label for="question" class="large-label">Souhaitez vous obtenir une information sur* :</label>
+                <select name="question" id="question">
+                    <option value="Les voyages proposés">Les voyages proposés</option>
+                    <option value="Les voyages proposés">Les autres services proposés</option>
+                    <option value="Votre compte utilisateur">Votre compte utilisateur</option>
+                      <option value="Suivi de commande">Suivi de commande</option>
+                      <option value="Une aide à la navigation">Une aide à la navigation</option>
+                      <option value="Les voyages proposés">La société Space Cruise Line</option>
+                      <option value="Les voyages proposés">Divers</option>
+                  </select>
+              </p>
+              <p>
+                <div>
+                  <label for="message">Message* :</label>
+                  <p><textarea rows="10" cols="25" name="zone" id="zoneDemande" tabindex="150" accesskey="C" placeholder="Rédigez votre demande..."></textarea></p>
+                </div>
+              </p>
+              <p>
+                <div>
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+                  <label for="commentaire" class="large-label">Réecrivez le code ci-dessous* :</label>
+                  <textarea name="commentaire" id="commentaire"></textarea><br/>
+                  <div class="g-recaptcha" data-sitekey="XXXXXXXXXXXXXXXXXXXX"></div>
+                  <input type="submit" value="Soumettre" id="envoi" />
+              </p>
+              <p>*champs obligatoires</p>
+              <p>
+                <center> <a href="#" class="btn purple-btn">ENVOYER</a></center>
+              </p>
+              </div>
+              </p>
+            </fieldset>
+          </form>
+        </div>
+        <!-- <div class="container"> -->
+        <!-- <div class="row"> -->
+        <div class="col-md-5 col-md-offset-1">
+          <div class="contact-content">
+            <legend>
+              <h2><i class="fa fa-map-marker" aria-hidden="true"></i> TROUVEZ-NOUS</h2>
+            </legend>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.77036441196!2d-118.33012538478842!3d33.921309280641786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b5ded9a490b5%3A0x3095ae5795c500b3!2sRocket+Rd%2C+Hawthorne%2C+CA+90250%2C+%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1511696505219"
+              width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <center>
+              <strong>
+                <p>
+                  <i class="fa fa-map-pin" aria-hidden="true"></i> Space Cruise line<br>
+                  2 Avenue Rocket<br>
+                  Silicon Valley<br>
+                  California, US
+                </p>
+              </strong>
+            </center>
+          </div>
 
-      </div>
+          <br>
 
-    </div>
+          <div class="contact-content">
+            <legend>
+              <h2><i class="fa fa-info-circle" aria-hidden="true"></i> INFORMATIONS</h2>
+            </legend>
+            <center>
+              <i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:contact@spacecruiseline.com">contact@spacecruiseline.com</a>
+              <br>
+              <i class="fa fa-phone" aria-hidden="true"></i> 01 02 03 04 05
+              <br> Siret : 638 913 401 002
+              <br>
+            </center>
+          </div>
+
   </section>
-
   <!-- /.container -->
   <footer>
     <div class="row">

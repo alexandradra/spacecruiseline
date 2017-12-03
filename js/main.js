@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('.slider').bxSlider({
     adaptiveHeight: true,
     speed: 1500,
-    pause: 5000,
+    pause: 50000000,
     pager: false,
     auto: true,
     mode: 'fade',
@@ -35,5 +35,5 @@ $(document).ready(function() {
       }
     }
   });
-  
+
 });

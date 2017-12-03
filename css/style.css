@@ -378,3 +378,46 @@ header {
   padding: 10px 30px;
   line-height: normal;
 }
+/*Témoignages*/
+.testimonials-carrousel {
+
+}
+
+/*INFORMATIONS (Laura)*/
+.info-main h2{
+color : #922e79;
+padding-bottom: 20px;
+font-family: Saira Semi Condensed;
+}
+.reservation-main section {
+  background-color: white;
+}
+section .counter-wrap {
+  background-color: #310e56;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.img-info {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  width:90px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adresse {
+  color: black;
+  font-weight: bold;
+  font-family: Saira Semi Condensed;
+}
+h3.timer {
+  font-size: 30px;
+}
+.counter-info {
+  font-size: 18px;
+}
+.info-main>section:last-of-type {
+  padding-bottom: 40px;
+}

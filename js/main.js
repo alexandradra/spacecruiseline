@@ -15,11 +15,25 @@ $(document).ready(function() {
     language: 'fr-FR',
     weekStart: 1,
   });
-  // $('.parallax-layer').parallax({
-  //   mouseport: jQuery('#parallax')
-  // },
-  // {
-  //   xorigin: 'left',
-  //   yparallax: '0px'
-  // });
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false
+      },
+      600: {
+        items: 2,
+        nav: false
+      },
+      1000: {
+        items: 3,
+        nav: false,
+        loop: false
+      }
+    }
+  });
+  
 });
